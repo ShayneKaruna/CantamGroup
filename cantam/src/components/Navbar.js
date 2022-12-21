@@ -20,16 +20,13 @@ export default function Navbar() {
   return (
     <div>
 
-
-  window.addEventListener("scroll", changeColor);
-
   return (
     <div className={color ? "header header-bg" :"header"}>
       <Link to="/">
         <a href="/">
-        <img src = {logo} height="200" width="200" alt="text here" /></a>
+        <img height="200" width="200" alt="text here" /></a>
       </Link>
-      <ul className={click ? "nav-menu active" : "nav-menu"}>
+      <ul>
         <li>
           <Link to="/">Home</Link>
         </li>
