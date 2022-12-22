@@ -9,11 +9,11 @@ const HeroImg = () => {
   return (
     <div className="hero">
       <div className="mask">
-        <iframe src="https://giphy.com/embed/3o6ZsT1vikZk2sTNRu" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      <iframe src="https://giphy.com/gifs/loop-dark-city-qGGW97Hl1alwBpiafM" width="100%" height="100%" class="giphy-embed" allowFullScreen></iframe> 
       </div>
       <div className="content">
-        <p>HI, I'M SHAYNE</p>
-        <h1>Full Stack Web Developer</h1>
+        <p>Since 2000</p>
+        <h1>COMMITTED TO QUALITY</h1>
         <div>
           <Link to="/project" className="btn">
             Projects
