@@ -1,6 +1,7 @@
 import "./pagescss/NavbarStyles.css";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from '../components/images/cantamlogo.png' 
 
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -23,7 +24,7 @@ const Navbar = () => {
     <div className={color ? "header header-bg" : "header"}>
       <Link to="/">
         <a href="/">
-          Wahgwan
+          <img src={logo} alt="logo" width={220}></img>
         </a>
       </Link>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
@@ -31,23 +32,23 @@ const Navbar = () => {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/project">Projects</Link>
+          <Link to="/project">About</Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/about">Project</Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact">Careers</Link>
         </li>
         <li>
-          <Link to="/resume">Resume</Link>
+          <Link to="/resume">Contact Us</Link>
         </li>
       </ul>
       <div className="hamburger" onClick={handleClick}>
         {click ? (
-          <FaTimes size={20} style={{ color: "#fff" }} />
+          <FaTimes size={20} style={{ color: "#000" }} />
         ) : (
-          <FaBars size={20} style={{ color: "#fff" }} />
+          <FaBars size={20} style={{ color: "#000" }} />
         )}
       </div>
     </div>
