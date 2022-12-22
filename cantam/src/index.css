@@ -8,11 +8,11 @@
 }
 
 body{
-  background: black;
+ background-color: rgb(165, 204, 165);
 }
 
 h1, h4, p, a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
