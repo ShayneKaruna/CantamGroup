@@ -4,22 +4,20 @@ import HeroImg from "./HeroImg";
 import Homepage from "./pages/Homepage";
 import NotFound from "./pages/NotFound";
 
+import { Route, Routes } from "react-router-dom";
+
 export default function Main() {
-  const [currentPage, setCurrentPage] = useState('Landing');
-  const RenderPage = () => {
-    switch (currentPage) {
-      case "Landing":
-        return <HeroImg />
-      case "Homepage":
-        return <Homepage />;
-      default: 
-        return <NotFound />;
-    }
-  }
+
   return (
-    <div >
+    <div>
       <Navbar />
-      <RenderPage />
+      <>
+        <Routes>
+          <Route path="/" element={<HeroImg />} />
+          <Route path="/home" element={<Homepage />} />
+          <Route path="/about" element={<NotFound />} />
+        </Routes>
+      </>
     </div>
   );
 }
