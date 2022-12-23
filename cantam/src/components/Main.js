@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import HeroImg from "./HeroImg";
 import Homepage from "./pages/Homepage";
 import NotFound from "./pages/NotFound";
+import About from "./pages/About";
 
 import { Route, Routes } from "react-router-dom";
 
@@ -15,7 +16,7 @@ export default function Main() {
         <Routes>
           <Route path="/" element={<HeroImg />} />
           <Route path="/home" element={<Homepage />} />
-          <Route path="/about" element={<NotFound />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </>
     </div>
