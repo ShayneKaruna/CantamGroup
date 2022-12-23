@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import HeroImg from "./HeroImg";
 import Homepage from "./pages/Homepage";
 import NotFound from "./pages/NotFound";
@@ -18,6 +19,7 @@ export default function Main() {
           <Route path="/about" element={<NotFound />} />
         </Routes>
       </>
+      <Footer />
     </div>
   );
 }
