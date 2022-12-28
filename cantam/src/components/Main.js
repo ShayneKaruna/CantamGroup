@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import HeroImg from "./HeroImg";
 import Homepage from "./pages/Homepage";
 import NotFound from "./pages/NotFound";
+import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Careers from "./pages/Careers";
 
@@ -20,6 +21,7 @@ export default function Main() {
           <Route path="/home" element={<Homepage />} />
           <Route path="/about" element={<About />} />
           <Route path="/careers" element = {<Careers />} />
+          <Route path="/contact" element = {<Contact />} />
         </Routes>
       </>
       <Footer />
