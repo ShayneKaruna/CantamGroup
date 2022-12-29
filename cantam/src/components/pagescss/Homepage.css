@@ -69,3 +69,9 @@
 .p-body{
     margin-top: 20px;
 }
+
+.about-more{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

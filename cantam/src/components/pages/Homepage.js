@@ -39,7 +39,7 @@ export default function Homepage() {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <Link to="/about">
+          <Link to="/about" className="about-more">
             <button className="btn">Learn More</button>
           </Link>
         </div>
